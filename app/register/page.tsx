@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 export default function RegisterPage() {
   return (
     <AuthLayout
-      title="Create your Luz account"
+      title="Create your Luz account 👋"
       subtitle="Register as an administrator to access your dashboard"
     >
       <RegisterForm />
-      <div className="mt-4 text-center text-sm">
+      <div className="mt-2 text-center text-sm">
         Already have an account?{" "}
         <Link href="/login" className="font-medium text-primary underline underline-offset-4">
           Login

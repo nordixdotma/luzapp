@@ -56,12 +56,12 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://plus.unsplash.com/premium_photo-1661353270751-3367badbb3e0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+            backgroundImage: `url('https://glassandglass.co.uk/wp-content/uploads/2023/09/Untitled-3.jpg')`,
           }}
         ></div>
 
         {/* Gradient Overlay (bottom to top) */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/40 to-black/20"></div>
 
         {/* Luz Logo in Top Left with Animation */}
         <div className="absolute top-8 left-8 z-10 logo-container">
@@ -91,9 +91,9 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
         }`}
       >
         <div className="w-full max-w-md space-y-6 py-4">
-          <div className="space-y-2 text-center">
+          <div className="space-y-1 text-center">
             <h2 className="text-3xl font-bold">{title}</h2>
-            <p className="text-muted-foreground">{subtitle}</p>
+            <p className="text-neutral-500">{subtitle}</p>
           </div>
           {children}
         </div>
@@ -109,11 +109,11 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
 
         .ball {
           position: absolute;
-          top: 0;
+          top: 4px;
           left: 0;
           height: 40px;
           width: 40px;
-          background-color: #9c2d40;
+          background-color: #ff4500;
           border-radius: 50%;
           animation: ballmove 4s infinite alternate;
           z-index: 1;
@@ -136,12 +136,12 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
         @keyframes ballmove {
           0%{transform: translate(0px, 3px) scale(0.1);}
           10%{transform: translateX(0px) scale(0.5);}
-          40%{transform: translateX(85px) scale(0.5);}
-          60%{transform: translate(80px, 3px) scale(0.1);}
-          70%{transform: translate(80px, 3px) scale(0.15);}
-          80%{transform: translate(80px, 3px) scale(0.1);}
-          90%{transform: translate(80px, 3px) scale(0.15);}
-          100%{transform: translate(80px, 3px) scale(0.1);}
+          40%{transform: translateX(55px) scale(0.5);}
+          60%{transform: translate(50px, 3px) scale(0.1);}
+          70%{transform: translate(50px, 3px) scale(0.15);}
+          80%{transform: translate(50px, 3px) scale(0.1);}
+          90%{transform: translate(50px, 3px) scale(0.15);}
+          100%{transform: translate(50px, 3px) scale(0.1);}
         }
 
         @keyframes textreveal {
