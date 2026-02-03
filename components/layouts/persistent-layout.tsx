@@ -13,14 +13,11 @@ import {
   Menu,
   Package,
   Settings,
-  ShoppingCart,
   Users,
   Users2,
   X,
-  Store,
   Receipt,
   Box,
-  Wallet,
   FolderOpen,
 } from "lucide-react"
 
@@ -106,29 +103,7 @@ const sidebarGroups: SidebarGroup[] = [
       },
     ],
   },
-  {
-    label: "Purchases",
-    items: [
-      {
-        title: "Suppliers",
-        icon: Store,
-        path: "/suppliers",
-        description: "Supplier management",
-      },
-      {
-        title: "Purchase Orders",
-        icon: ShoppingCart,
-        path: "/purchases",
-        description: "Purchase orders and tracking",
-      },
-      {
-        title: "Expenses",
-        icon: Wallet,
-        path: "/expenses",
-        description: "Expense management",
-      },
-    ],
-  },
+
   {
     label: "My Luz",
     items: [
@@ -145,10 +120,10 @@ const sidebarGroups: SidebarGroup[] = [
         description: "Invite members; role-based permissions",
       },
       {
-        title: "My Folder",
+        title: "My Space",
         icon: FolderOpen,
-        path: "/my-folder",
-        description: "Manage your personal folder",
+        path: "/my-space",
+        description: "Manage your personal space",
       },
     ],
   },
