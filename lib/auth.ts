@@ -26,29 +26,11 @@ const mockUsers: (User & { password: string })[] = [
   {
     id: "user-1",
     fullName: "Noureddine Elm",
-    email: "admin@example.com",
+    email: "admin@luz.com",
     password: "password123",
     role: "Admin",
     companyId: "company-1",
     avatar: "/me.webp",
-  },
-  {
-    id: "user-2",
-    fullName: "Editor User",
-    email: "editor@example.com",
-    password: "password123",
-    role: "Editor",
-    companyId: "company-1",
-    avatar: "https://glassandglass.co.uk/wp-content/uploads/2023/09/Untitled-3.jpg",
-  },
-  {
-    id: "user-3",
-    fullName: "Viewer User",
-    email: "viewer@example.com",
-    password: "password123",
-    role: "Viewer",
-    companyId: "company-1",
-    avatar: "https://glassandglass.co.uk/wp-content/uploads/2023/09/Untitled-3.jpg",
   },
 ]
 

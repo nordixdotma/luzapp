@@ -47,8 +47,8 @@ export function RegisterForm() {
       // Register user with mock API
       await registerUser(formData.fullName, formData.email, formData.password, formData.companyName)
 
-      // Redirect to dashboard
-      router.push("/dashboard")
+      // No redirect for registration as requested for demo
+      // router.push("/dashboard")
     } catch (err) {
       setError(err instanceof Error ? err.message : "Registration failed")
     } finally {
