@@ -7,6 +7,7 @@ interface User {
   email: string
   role: "Admin" | "Editor" | "Viewer"
   companyId: string
+  avatar?: string
 }
 
 interface Company {
@@ -21,14 +22,15 @@ interface Company {
 }
 
 // Mock users for testing
-const mockUsers = [
+const mockUsers: (User & { password: string })[] = [
   {
     id: "user-1",
-    fullName: "Admin User",
+    fullName: "Noureddine Elm",
     email: "admin@example.com",
     password: "password123",
     role: "Admin",
     companyId: "company-1",
+    avatar: "/me.webp",
   },
   {
     id: "user-2",
@@ -37,6 +39,7 @@ const mockUsers = [
     password: "password123",
     role: "Editor",
     companyId: "company-1",
+    avatar: "https://glassandglass.co.uk/wp-content/uploads/2023/09/Untitled-3.jpg",
   },
   {
     id: "user-3",
@@ -45,6 +48,7 @@ const mockUsers = [
     password: "password123",
     role: "Viewer",
     companyId: "company-1",
+    avatar: "https://glassandglass.co.uk/wp-content/uploads/2023/09/Untitled-3.jpg",
   },
 ]
 
@@ -52,7 +56,7 @@ const mockUsers = [
 const mockCompanies = [
   {
     id: "company-1",
-    name: "Acme Inc",
+    name: "L u z",
     ice: "123456789",
     rc: "RC123456",
     address: "123 Main St, City",
